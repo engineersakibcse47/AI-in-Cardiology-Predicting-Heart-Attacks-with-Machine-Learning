@@ -15,7 +15,7 @@ Multiple machine learning models are implemented and evaluated:
 
 ## Logistic Regression Algorithm
 
-```
+```python
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score
 
