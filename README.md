@@ -1,6 +1,8 @@
 # AI in Cardiology: Predicting Heart Attacks with Machine Learning
 
 ## Introduction
+This project focuses on building machine learning models to predict the likelihood of heart attacks based on various health metrics and risk factors. By analyzing a dataset containing patient information, the goal is to identify patterns that may indicate the risk of a heart attack.
+
 ### What is Heart Attack?
 Discusses Myocardial infarction, commonly known as a heart attack, explaining how it occurs due to occlusion of vessels by cholesterol and fat, leading to blood flow blockage and potential fatality.
 
