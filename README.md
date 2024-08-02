@@ -28,12 +28,12 @@ print("Test Accuracy: {}".format(accuracy))
 
 ## Cross-validation
 
-```
+```python
 scores = cross_val_score(log_reg, X_test, y_test, cv = 10)
 print("Cross-Validation Accuracy Scores", scores.mean())
 ```
 ## Hyperparameter Optimization with GridSearchCV
-```
+```python
 log_reg_new = LogisticRegression()
 parameters = {"penalty":["l1","l2"], "solver" : ['newton-cg', 'lbfgs', 'liblinear', 'sag', 'saga']}
 log_reg_grid = GridSearchCV(log_reg_new, param_grid = parameters)
@@ -45,7 +45,7 @@ print("The test accuracy score of Logistic Regression After hyper-parameter tuni
 ```
 
 ## Decision Tree Algorithm
-```
+```python
 dec_tree = DecisionTreeClassifier(random_state = 5)
 dec_tree.fit(X_train, y_train)
 y_pred = dec_tree.predict(X_test)
@@ -57,7 +57,7 @@ print("Cross-Validation Accuracy Scores", scores.mean())
 
 ## Support Vector Machine Algorithm
 
-```
+```python
 svc_model = SVC(random_state = 5)
 svc_model.fit(X_train, y_train)
 y_pred = svc_model.predict(X_test)
@@ -67,7 +67,7 @@ print("Cross-Validation Accuracy Scores", scores.mean())
 ```
 
 ## Random Forest Algorithm
-```
+```python
 random_forest = RandomForestClassifier(random_state = 5)
 random_forest.fit(X_train, y_train)
 y_pred = random_forest.predict(X_test)
@@ -76,7 +76,7 @@ scores = cross_val_score(random_forest, X_test, y_test, cv = 10)
 print("Cross-Validation Accuracy Scores", scores.mean())
 ```
 ## Hyperparameter Optimization with GridSearchCV for Random Forest
-```
+```python
 random_forest_new = RandomForestClassifier(random_state = 5)
 parameters = {"n_estimators" : [50, 100, 150, 200], 
               "criterion" : ["gini", "entropy"], 
